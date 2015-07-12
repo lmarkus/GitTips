@@ -2,9 +2,11 @@
 Some git shortcuts to make your life easy
 
 ## Setup
-1) Make sure you have the latest version of git. 
 
-2) Check your install: `git --version`. Usually, git will install into `/usr/local/git` however, OSX ships with it's own version of git, which can take precedence. If your git version is not what you expect, try renaming apple's version: 
+### Install git
+1.- Make sure you have the latest version of git. 
+
+1.- Check your install: `git --version`. Usually, git will install into `/usr/local/git` however, OSX ships with it's own version of git, which can take precedence. If your git version is not what you expect, try renaming apple's version: 
 
 ```bash
 sudo mv /usr/bin/git /usr/bin/git-apple
@@ -24,3 +26,10 @@ source ~/.git-completion.bash
 3.- Reload the terminal.  Test it: `git check<tab>` should autocomplete to `git checkout`
 
 ### Set up your name:
+
+This comes in handy for identifying your commits in git's history
+
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
