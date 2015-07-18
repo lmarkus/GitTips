@@ -33,3 +33,8 @@ This comes in handy for identifying your commits in git's history
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
+
+
+## Smoke and Mirrors for the presentation
+- Watch: `watch  "cd gitClass/.git/objects; find ./ -type file | tr -d './'"`  This command shows all the objects in the git database. (It removes any slashes and dots, so we see the pure SHA1 checksum) *Note: Requires installing the `watch` command on Mac. Homebrew install recommended.
+- Show: `alias show="git cat-file -p"` quick alias to shows the content of a git object.
